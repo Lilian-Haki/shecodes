@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .content{
+    text-align: center;
+    }
+    .weather{
+        padding: 3px;
+        font-size: 12px;
+    }
+    .weather:hover{
+        background-color:#fff4f4;
+        margin:0 auto;
+        width: 400px;
+    }
+    h2{
+        font-weight: lighter;
+        color: grey;
+    }
+    h2 span{
+font-weight: bold; 
+color: rgb(63, 61, 61);
+   }
+   button{
+    height: 50px;
+    width: 130px;
+    border-radius: 40px;
+    background-color: rgb(23, 94, 209);
+    border-width: 0cap;
+    color: aliceblue;
+    font-size: 17px;
+   }
+   button:hover{
+    background-color: aliceblue;
+    color: rgb(39, 39, 135);
+    border-color: rgb(9, 9, 88);
+    border-width: 2px;
+    border-right-color: blue;
+    border-bottom-color: blue;
+    font-size: 18px;
+   }
+</style>
+</head>
+<body>
+    <div class="content">
+    <div>
+        <h1 id="tempalert" style="color:blue;"> &#9925 <br> Currently <span>21&deg in Tokyo</h1>
+        <h2 style="font-size:35px;color:black;">13&deg / <span>23&deg</span></h2>
+    </div>
+    <div class="weather">
+        <h1><img src="https://codefrog.space/cp/wp/ts.png" alt="" width="40">Tomorrow</h1>
+        <h2>10&deg / <span>22&deg</span></h2>
+    </div>
+    <div class="weather">
+        <h1><img src="https://th.bing.com/th?id=OIP.ghKs3RRsmFd52OsHvatSyAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" width="40">
+            Saturday</h1>
+        <h2>15&deg / <span>17&deg</span></h2>
+    </div>
+    <div class="weather">
+        <h1><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY_CdHzHTBVxooxrgrgLH9Xch26mKbL1PklkUhvN-G9w9vGms&s" width="40">Sunday</h1>
+        <h2>25&deg / <span>28&deg</span></h2>
+    </div> 
+    <div class="weather">
+        <button>Change city</button>
+    </div> 
+    <h3 style="margin-top:7px;font-style:italic;color:rgb(95, 55, 3);">Coded by Lilian Haki</h3>
+    <div> 
+    <script>
+        function askForCity() {
+            let city = prompt("What city do you live in?");
+            let temperature = prompt("What temperature is it?"); 
+            let temp = document.querySelector("h1")
+            if (temperature > 0) {
+              temp.innerHTML = "&#128522 <br> Currently, " + temperature + "&degC in" +  " " + city;
+                }
+              if (temperature <= 0) {
+                temp.innerHTML = "&#129398 <br> Currently, " + temperature + "&degC in" +  " " + city;
+            }
+            }
+            let element = document.querySelector("button");
+            element.addEventListener("click", askForCity);
+
+    </script>                     
+</body>
+</html>
