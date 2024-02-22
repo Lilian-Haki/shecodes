@@ -1,20 +1,68 @@
+body{
+    /*background: linear-gradient(120deg, #cdc6d3 20%, #8ec5fc 100%,#8ec5fc 100%, #8ec5fc 100%);*/
+    /*background-color: #9f87ca;*/
+    background-color: #6352a1;
+}
+.container{
+    margin-left: 180px;
+    margin-top: 50px;
+    height: 500px;
+    width: 1000px;
+    box-shadow: 30px 30px 30px #8ec5fc;
+}
+nav ul li{
+    display: inline;
+    color: black;
+    justify-content: space-between;
+    padding: 20px;
+    margin-left: 60px;
+}
+svg{
+    height: 270px;
+    width: 1000px;
+}
+.navigation nav{
+    margin-top: -250px;
+    background-color: #fff;
+}
+.content{
+    display: flex;
+    margin-top: 120px;
+}
+.img{
+    height: 320px;
+}
+img{
+    height: 320px;
+    width: 600px;
+}
+.info{
+    background: linear-gradient(-200deg, #6352a1 70%, #8ec5fc 80%,#8ec5fc 30%, #8ec5fc 100%);
+}
 h1{
-    color: aqua;
-    font-size: 48px;
-    text-decoration: underline;
-    font-weight: lighter;
-    text-align: center;
+    font-size: 40px;
 }
-h2{
-    color: green;
-    text-align: center;
+span{
+    color: #8ec5fc;
+    font-weight: bold;
 }
-.link1{
-    color: blue;
+button{
+    background-color: #8ec5fc;
+    border-radius: 20px;
+    padding: 10px;
+    border: #8ec5fc;
 }
-.link2{
-    color: red;
+button:hover{
+    background-color: #214a72;
+    color: aliceblue;
+    transition: 0.5s ease-out;
 }
-.link3{
-    color: green;
+hr{
+    width: 200px;
+    border-width: 2px;
+    margin-left: 0;
+}
+p{
+    line-height: 18px;
+    transition: .35s ease-in-out;
 }
